@@ -34,8 +34,6 @@ jobs:
         echo "Worktree created"
         cp static/* ../generated/
         cd ../generated/
-        git branch gh-pages
-        echo "Switched to branch"
         git add ./*
         git commit -m "Updating pages on %d"
         echo "Committed"
