@@ -37,7 +37,7 @@ jobs:
         git add ./*
         git commit -m "Updating pages on %d"
         echo "Committed"
-        git push origin/gh-pages
+        git push
         echo "Pushed"
         cd ../main
         git worktree remove
