@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UTE xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:ute="urn:ute">
+<xsd:schema targetNamespace="urn:ute">
+   <xsd:element name="streets">
+      <xsd:complexType>
+         <xsd:sequence>
+         <xsd:element name="street" minOccurs="1" maxOccurs="unbounded">
+            <xsd:attribute name="name" type="xsd:string" use="required" />
+         </xsd:element>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>
+<ute:streets>
+    <street name="Karlsplatz" />
+    <street name="Getreidemarkt" />
+<!---    <street name="Gusshausstrasse" />
+    <street name="Wiedener Hauptstrasse" /> -->
+</ute:streets>
+</UTE>
