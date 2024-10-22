@@ -27,7 +27,7 @@ jobs:
         git config user.name 'HUSZERL Gábor'
         git config user.email 'huszerl@mit.bme.hu'
         echo "Configured"
-        git worktree add ../generated gh-pages
+        git worktree add gh-pages ../generated
         echo "Worktree created"
         cp static/* ../generated/
         cd ../generated/
