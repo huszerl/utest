@@ -29,8 +29,9 @@ jobs:
         git worktree add ../generated gh-pages
         cp static/* ../generated/
         cd ../generated/
+        git branch gh-pages
         git add ./*
         git commit -m "Updating pages on %d"
-        git push origin/gh-pages
+        git push origin
         cd ../main
         git worktree remove
