@@ -28,4 +28,4 @@ jobs:
         git branch gh-pages
         git config user.name 'HUSZERL Gábor'
         git config user.email 'huszerl@mit.bme.hu'
-        git commit -m "Updating pages on %d"
+        git commit -am "Updating pages on %d"
