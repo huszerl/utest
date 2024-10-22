@@ -30,7 +30,7 @@ jobs:
         pwd
         mkdir ../generated
         echo "Dir made"
-        git worktree add gh-pages ../generated
+        git worktree add -b gh-pages ../generated
         echo "Worktree created"
         cp static/* ../generated/
         cd ../generated/
