@@ -26,4 +26,6 @@ jobs:
       run: |
         cp static/* .
         git branch gh-pages
+        git config user.name 'HUSZERL Gábor'
+        git config user.email 'huszerl@mit.bme.hu'
         git commit -m "Updating pages on %d"
