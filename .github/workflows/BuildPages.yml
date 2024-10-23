@@ -41,5 +41,5 @@ jobs:
         echo "--- Pushed"
         ls ../utest
         echo "--- Root directory listed"
-        cd ../main
+        cd ../utest
         git worktree remove
