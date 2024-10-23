@@ -33,7 +33,7 @@ out.write('''<!!DOCTYPE html>
    <h1>Street list for test purposes</h1>
    <ul>''')
 
-for filename in os.listdir("..\\data"):
+for filename in os.listdir("../data"):
     if filename.endswith(".xml"):
         # parses all XML files present in data subfolder
         filename = "..\data\\" + filename
