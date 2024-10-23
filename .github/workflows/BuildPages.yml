@@ -39,7 +39,7 @@ jobs:
         echo "--- Committed"
         git push --force --set-upstream origin gh-pages
         echo "--- Pushed"
-        ls ..
+        ls ../utest
         echo "--- Root directory listed"
         cd ../main
         git worktree remove
