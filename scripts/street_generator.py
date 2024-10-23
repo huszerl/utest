@@ -36,7 +36,7 @@ out.write('''<!!DOCTYPE html>
 for filename in os.listdir("../data"):
     if filename.endswith(".xml"):
         # parses all XML files present in data subfolder
-        filename = "..\data\\" + filename
+        filename = "../data/" + filename
         print(filename, end=" ")
         try:
             tree = ET.parse(filename)
