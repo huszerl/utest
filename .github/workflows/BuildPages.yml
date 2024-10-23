@@ -24,15 +24,18 @@ jobs:
     
     - name: Copy static content
       run: |
-        git config user.name 'HUSZERL Gábor'
+        git config user.name 'HUSZERL G.'
         git config user.email 'huszerl@mit.bme.hu'
         echo "--- Configured"
         pwd
         mkdir ../generated
-        echo "--- Dir made"
         git worktree add -b gh-pages ../generated
         echo "--- Worktree created"
         cp static/* ../generated/
+        echo "--- Starting generation"
+        python scripts/street_generator.py
+        echo "--- Generation finished"
+        cp gen/* ../generated/
         cd ../generated/
         git add ./*
         git commit -m "Updating pages on ${{ steps.date.outputs.date }}"
