@@ -46,7 +46,7 @@ for filename in os.listdir("../data"):
         process_xml(tree)
 
 out.write('''   </ul>
-Back to <a href="..\\static\\index.html">main page</a>
+Back to <a href="..\\index.html">main page</a>
 </body>
 </html>''')
 print ('STOP')
