@@ -35,7 +35,7 @@ jobs:
         cp static/* ../generated/
         cd ../generated/
         git add ./*
-        git commit -m "Updating pages on %d"
+        git commit -m "Updating pages on ${{ steps.date.outputs.date }}"
         echo "--- Committed"
         git push --force --set-upstream origin gh-pages
         echo "--- Pushed"
