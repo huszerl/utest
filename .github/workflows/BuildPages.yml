@@ -36,6 +36,7 @@ jobs:
         echo "--- Starting generation"
         cd scripts
         python street_generator.py
+        cd ..
         echo "--- Generation finished"
         cp gen/* ../generated/
         cd ../generated/
