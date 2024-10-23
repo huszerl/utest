@@ -26,18 +26,20 @@ jobs:
       run: |
         git config user.name 'HUSZERL Gábor'
         git config user.email 'huszerl@mit.bme.hu'
-        echo "Configured"
+        echo "--- Configured"
         pwd
         mkdir ../generated
-        echo "Dir made"
+        echo "--- Dir made"
         git worktree add -b gh-pages ../generated
-        echo "Worktree created"
+        echo "--- Worktree created"
         cp static/* ../generated/
         cd ../generated/
         git add ./*
         git commit -m "Updating pages on %d"
-        echo "Committed"
+        echo "--- Committed"
         git push --force --set-upstream origin gh-pages
-        echo "Pushed"
+        echo "--- Pushed"
+        ls ..
+        echo "--- Root directory listed"
         cd ../main
         git worktree remove
