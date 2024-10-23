@@ -39,7 +39,7 @@ jobs:
         python street_generator.py
         cd ..
         echo "--- Generation finished"
-        cp gen/ ../generated/
+        cp -r gen/ ../generated/
         cd ../generated/
         git add ./*
         git commit -m "Updating pages on ${{ steps.date.outputs.date }}"
