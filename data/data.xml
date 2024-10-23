@@ -15,7 +15,7 @@
 <ute:streets>
     <street name="Karlsplatz" />
     <street name="Getreidemarkt" />
-<!---    <street name="Gusshausstrasse" />
-    <street name="Wiedener Hauptstrasse" /> -->
+    <street name="Gusshausstrasse" />
+<!---    <street name="Wiedener Hauptstrasse" /> -->
 </ute:streets>
 </UTE>
