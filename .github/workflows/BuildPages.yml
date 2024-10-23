@@ -33,7 +33,8 @@ jobs:
         echo "--- Worktree created"
         cp static/* ../generated/
         echo "--- Starting generation"
-        python scripts/street_generator.py
+        cd scripts
+        python street_generator.py
         echo "--- Generation finished"
         cp gen/* ../generated/
         cd ../generated/
