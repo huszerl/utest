@@ -42,4 +42,4 @@ jobs:
         ls ../utest
         echo "--- Root directory listed"
         cd ../utest
-        git worktree remove gh-pages
+        git worktree remove ../generated
