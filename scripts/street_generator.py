@@ -22,12 +22,12 @@ def process_xml(tree):
 
 print ('START')
 streetdict = {}
-out = open('..\\gen\\UTEwien_streets.html', 'w', encoding="utf-8")
+out = open('../gen/UTEwien_streets.html', 'w', encoding="utf-8")
 out.write('''<!!DOCTYPE html>
 <html>
 <head>
    <title>UTEwien streets</title>
-   <link rel="icon" type="image/x-icon" href="..\\static\\logo.png">
+   <link rel="icon" type="image/x-icon" href="../static/logo.png">
 </head>
 <body>
    <h1>Street list for test purposes</h1>
